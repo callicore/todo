@@ -1,6 +1,7 @@
+#!/usr/bin/env php
 <?php
 /**
- * todo.php - \Callicore\Todo
+ * todo.phpg - \Callicore\Todo startup file
  *
  * This is released under the MIT, see license.txt for details
  *
@@ -21,8 +22,6 @@ namespace Callicore\Todo;
 
 /**
  * Figure out our library location
- * @todo reset this to use a callicore library submodule location?
- * and make it clever enough to handle phars?
  */
 defined('CALLICORE_LIB') || define('CALLICORE_LIB', (getenv('CALLICORE_LIB') ? getenv('CALLICORE_LIB') : __DIR__ . DIRECTORY_SEPARATOR . 'callicore' . DIRECTORY_SEPARATOR));
 
