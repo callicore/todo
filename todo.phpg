@@ -1,0 +1,48 @@
+<?php
+/**
+ * todo.php - \Callicore\Todo
+ *
+ * This is released under the MIT, see license.txt for details
+ *
+ * @author       Elizabeth M Smith <auroraeosrose@gmail.com>
+ * @copyright    Elizabeth M Smith (c) 2009-2012
+ * @link         http://callicore.net
+ * @license      http://www.opensource.org/licenses/mit-license.php MIT
+ * @since        Php 5.4.0 GTK 2.24.0
+ * @package      callicore
+ * @subpackage   todo
+ * @filesource
+ */
+
+/**
+ * Namespace for application
+ */
+namespace Callicore\Todo;
+
+/**
+ * Figure out our library location
+ * @todo reset this to use a callicore library submodule location?
+ * and make it clever enough to handle phars?
+ */
+defined('CALLICORE_LIB') || define('CALLICORE_LIB', (getenv('CALLICORE_LIB') ? getenv('CALLICORE_LIB') : __DIR__ . DIRECTORY_SEPARATOR . 'callicore' . DIRECTORY_SEPARATOR));
+
+/**
+ * Figure out our app location
+ */
+defined('CALLICORE_TODO') || define('CALLICORE_TODO', (getenv('CALLICORE_TODO') ? getenv('CALLICORE_TODO') : __DIR__ . DIRECTORY_SEPARATOR));
+
+/**
+ * include our Callicore library
+ */
+include CALLICORE_LIB . 'callicore.php';
+
+/**
+ * include our todo application
+ */
+include CALLICORE_TODO . 'todo.php';
+
+ /**
+ * Create our application and run it
+ */
+ $application = new Application;
+ $application->run();
