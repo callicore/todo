@@ -17,9 +17,9 @@
 /**
  * Figure out our app location
  */
-defined('CALLICORE_TODO') || define('CALLICORE_TODO', (getenv('CALLICORE_TODO') ? getenv('CALLICORE_TODO') : __DIR__ . DIRECTORY_SEPARATOR));
+defined('CALLICORE_TODO') || define('CALLICORE_TODO', (getenv('CALLICORE_TODO') ? getenv('CALLICORE_TODO') : __DIR__ . DIRECTORY_SEPARATOR), true);
 
 /**
  * Include all todo items
  */
-include CALLICORE_TODO . 'app' . DIRECTORY_SEPARATOR . 'Application.php';
+include CALLICORE_TODO . 'lib' . DIRECTORY_SEPARATOR . 'Application.php';

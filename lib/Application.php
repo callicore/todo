@@ -56,6 +56,8 @@ class Application extends App {
         $splash->set_license('The MIT License');
         $splash->set_copyright('Elizabeth M Smith (c) 2012');
         $splash->set_version(static::VERSION);
+        $splash->parent($main);
+        $splash->align(0, 15, 0, 15);
         $splash->show_all();
         $splash->update('Syncing');
         sleep(2);
@@ -68,5 +70,19 @@ class Application extends App {
         $main->connect_simple('destroy',array($this,'quit'));
         $main->show_all();
         $splash->destroy();
+    }
+
+    /**
+     * load-config handler to make sure images directory 
+     *
+     * @return void
+     */
+    public function load_config($int)
+    {
+        echo "I be do configish $int";
+       // if (!isset($config['images'])) {
+        //    $config['images'] = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
+        //}
+        //var_dump($config['images']);
     }
 }
