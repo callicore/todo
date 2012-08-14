@@ -50,9 +50,10 @@ class Application extends App {
      * @return void
      */
     public function main(){
+        $config = App::config();
         $main = new GtkWindow();
         $splash = new Splash(4, $this);
-        $splash->set_image(__DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'etc' . DIRECTORY_SEPARATOR . 'splash.png');
+        $splash->set_image($config['images'] . 'splash.png');
         $splash->set_license('The MIT License');
         $splash->set_copyright('Elizabeth M Smith (c) 2012');
         $splash->set_version(static::VERSION);
@@ -77,12 +78,10 @@ class Application extends App {
      *
      * @return void
      */
-    public function load_config($int)
+    public function load_config($app, $config)
     {
-        echo "I be do configish $int";
-       // if (!isset($config['images'])) {
-        //    $config['images'] = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
-        //}
-        //var_dump($config['images']);
+        if (!isset($config['images'])) {
+            $config['images'] = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
+        }
     }
 }
