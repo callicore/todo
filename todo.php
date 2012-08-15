@@ -20,6 +20,11 @@
 defined('CALLICORE_TODO') || define('CALLICORE_TODO', (getenv('CALLICORE_TODO') ? getenv('CALLICORE_TODO') : __DIR__ . DIRECTORY_SEPARATOR), true);
 
 /**
- * Include all todo items
+ * Include all todo libraries
  */
 include CALLICORE_TODO . 'lib' . DIRECTORY_SEPARATOR . 'Application.php';
+
+/**
+ * Include all todo widgets
+ */
+include CALLICORE_TODO . 'widget' . DIRECTORY_SEPARATOR . 'Main.php';

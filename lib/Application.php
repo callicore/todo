@@ -92,7 +92,7 @@ class Application extends App {
     public function load_config($app, $config)
     {
         if (!isset($config['images'])) {
-            $config['images'] = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
+            $config['images'] = realpath(__DIR__ . DIRECTORY_SEPARATOR . '..') . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR;
         }
     }
 }
