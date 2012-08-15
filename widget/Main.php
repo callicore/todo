@@ -1,6 +1,6 @@
 <?php
 /**
- * Main.php - \Callicore\Lib\Widget\Main
+ * Main.php - \Callicore\Todo\Widget\Main
  *
  * This is released under the MIT, see license.txt for details
  *

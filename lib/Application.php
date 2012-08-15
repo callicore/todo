@@ -57,17 +57,13 @@ class Application extends App {
         $builder->add_from_file(__DIR__ . '/../layout/todo.glade');
 
         $window = $builder->get_object('main');
-        $window->show_all();
 
-
-        //$window = new Main();
-        $main = new GtkWindow();
         $splash = new Splash(4, $this);
         $splash->set_image($config['images'] . 'splash.png');
         $splash->set_license('The MIT License');
         $splash->set_copyright('Elizabeth M Smith (c) 2012');
         $splash->set_version(static::VERSION);
-        $splash->parent($main);
+        $splash->parent($window);
         $splash->align(0, 15, 0, 15);
         $splash->show_all();
         $splash->update('Syncing');
@@ -78,8 +74,8 @@ class Application extends App {
         sleep(2);
         $splash->update('Notifications');
         sleep(2);
-        $main->connect_simple('destroy',array($this,'quit'));
-        $main->show_all();
+        $window->connect_simple('destroy',array($this,'quit'));
+        $window->show_all();
         $splash->destroy();
     }
 
