@@ -13,7 +13,7 @@
    inkscape:export-ydpi="328.125"
    inkscape:export-xdpi="328.125"
    inkscape:export-filename="C:\Users\emsmith\Documents\GitHub\callicore-todo\etc\splash.png"
-   sodipodi:docname="nota.svg"
+   sodipodi:docname="splash.svg"
    inkscape:version="0.48.2 r9819"
    sodipodi:version="0.32"
    id="svg249"
@@ -756,7 +756,7 @@
      inkscape:grid-bbox="true"
      showgrid="false"
      inkscape:current-layer="layer1"
-     inkscape:cy="48.657885"
+     inkscape:cy="58.660481"
      inkscape:cx="-1.6805542"
      inkscape:zoom="3.5342866"
      inkscape:pageshadow="2"
@@ -784,16 +784,25 @@
        d="m 100.96561,6.4709982 c -1.358087,32.2639538 -0.76556,67.2722658 4.32417,98.0173918 -35.027192,-0.46701 -70.446292,-3.67011 -102.9290243,-1.64154 0.1213303,0.32347 6.9024341,5.98875 -0.3783674,-0.35242 -0.6291282,-41.593404 2.8039377,-58.142218 0,-96.0234318 0,-0.1952382 0.1687522,-0.3524158 0.3783674,-0.3524158 32.9940943,1.231201 66.0949943,2.9843813 98.2264843,0 0.20961,0 0.37837,0.1571776 0.37837,0.3524158 z"
        id="rect3269"
        sodipodi:nodetypes="cccccccc"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\emsmith\Documents\GitHub\callicore\todo\extra\text3517.png"
+       inkscape:export-xdpi="328.125"
+       inkscape:export-ydpi="328.125" />
     <path
        style="opacity:0.27777782;fill:url(#linearGradient2422);fill-opacity:1;fill-rule:evenodd;stroke-width:1pt;display:inline"
        sodipodi:nodetypes="ccczc"
        id="path1500"
        d="M 90.033492,6.1542374 49.19922,6.0039544 0.72549919,5.2877843 c 0,0 -5.19143059,129.1357957 37.87048981,58.2889817 C 81.657912,-7.2700538 85.605682,15.329263 90.033492,6.1542374 z"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\emsmith\Documents\GitHub\callicore\todo\extra\text3517.png"
+       inkscape:export-xdpi="328.125"
+       inkscape:export-ydpi="328.125" />
     <g
        id="g3154"
-       transform="matrix(0.04412033,0,0,0.04412033,37.859463,-1.3749684)">
+       transform="matrix(0.04412033,0,0,0.04412033,37.859463,-1.3749684)"
+       inkscape:export-filename="C:\Users\emsmith\Documents\GitHub\callicore\todo\extra\text3517.png"
+       inkscape:export-xdpi="328.125"
+       inkscape:export-ydpi="328.125">
       <path
          sodipodi:type="arc"
          style="fill:#ecca3e;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -858,7 +867,9 @@
        y="82.850822"
        id="text3517"
        sodipodi:linespacing="125%"
-       transform="matrix(0.96838611,-0.28422118,0.29052404,0.94737719,0,0)"><tspan
+       transform="matrix(0.96838611,-0.28422118,0.29052404,0.94737719,0,0)"
+       inkscape:export-xdpi="328.125"
+       inkscape:export-ydpi="328.125"><tspan
          sodipodi:role="line"
          id="tspan3519"
          x="-8.3758812"

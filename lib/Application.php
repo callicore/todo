@@ -21,6 +21,7 @@ namespace Callicore\Todo;
 use Callicore\Lib\Application as App;
 use Callicore\Lib\Widget\Splash;
 use GtkWindow;
+use GtkBuilder;
 
 /**
  * Application class for TODO
@@ -51,6 +52,15 @@ class Application extends App {
      */
     public function main(){
         $config = App::config();
+
+        $builder = new GtkBuilder();
+        $builder->add_from_file(__DIR__ . '/../layout/todo.glade');
+
+        $window = $builder->get_object('main');
+        $window->show_all();
+
+
+        //$window = new Main();
         $main = new GtkWindow();
         $splash = new Splash(4, $this);
         $splash->set_image($config['images'] . 'splash.png');
@@ -74,7 +84,8 @@ class Application extends App {
     }
 
     /**
-     * load-config handler to make sure images directory 
+     * load-config handler to make sure images directory
+     * is set up and saved
      *
      * @return void
      */
